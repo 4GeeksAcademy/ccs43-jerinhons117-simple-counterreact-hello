@@ -1,4 +1,93 @@
+*{
 
+    background-color: rgb(197, 196, 196);
+}
+
+.reloj{
+    width: 90vw;
+    height: 30vh;
+    background-color: rgb(126, 0, 131);
+    padding: 30px;
+    margin-top: 30px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+
+}
+
+.reloj .four{
+    width: 20%;
+    height: 90%;
+    margin: 10px;
+    background-color: rgb(218, 218, 218);;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    color: rgb(255, 255, 255) ;
+    border-radius: 20px;
+    box-shadow:5px 5px 2px 1px rgba(2, 2, 2, 0.2); 
+
+}
+.reloj .three{
+    width: 20%;
+    height: 90%;
+    margin: 10px;
+    background-color: rgb(218, 218, 218);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    color: rgb(255, 255, 255) ;
+    border-radius: 20px;
+    box-shadow:5px 5px 2px 1px rgba(2, 2, 2, 0.2); 
+   
+
+}
+.reloj .two{
+    width: 20%;
+    height: 90%;
+    margin: 10px;
+    background-color: rgb(218, 218, 218);;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    color: rgb(255, 255, 255) ;
+    border-radius: 20px;
+    box-shadow: 5px 5px 2px 1px rgba(2, 2, 2, 0.2); 
+
+}
+.reloj .one{
+    width: 20%;
+    height: 90%;
+    margin: 10px;
+    background-color: rgb(218, 218, 218);;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    color: rgba(47, 0, 255, 0.2) ;
+    border-radius: 20px;
+    box-shadow: 5px 5px 2px 1px rgba(2, 2, 2, 0.2); 
+
+}
+
+.button{
+    width: 20vw;
+    height: 10vh;
+    background-color: rgb(247, 247, 247);
+    padding: 20px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    outline: none;
+    border: none;
+    border: solid 2px rgba(82, 43, 255, 0.2);
+}
 /* 
 
     You can write your own styles here...

@@ -1,26 +1,39 @@
-import React from "react";
+import React, {useState} from "react";
 
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
+import  {SimpleCounter}  from "../component/counter";
+import { Btn } from "./boton";
 
-//create your first component
 const Home = () => {
-	return (
-		<div className="text-center">
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
-		</div>
-	);
+		const [time, setTime] = useState ({ms:0, s:0, m:0, h:0});
+
+		let start =() => {
+			run();
+			setInterval(run, 10);
+		}
+		let updateMs = time.ms, updateS = time.s, updateM = time.m, updateH = time.h;
+		const run = () =>{
+			if(updateM == 60){
+				updateH++;
+				updateM= 0;
+			}
+			if(updateS == 60){
+				updateM++;
+				updateS= 0;
+			}
+			if(updateMs == 100){
+				updateS++;
+				updateMs= 0;
+			}
+			updateMs++;
+			return setTime({ms:updateMs, s:updateS, m:updateM, h:updateH});
+			
+		}
+	return (<div className="reloj">
+
+		<SimpleCounter time= {time} />
+		<Btn start={start}/>
+
+		</div>);
 };
 
 export default Home;
