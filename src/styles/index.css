@@ -9,7 +9,7 @@
     background-color: rgb(126, 0, 131);
     padding: 30px;
     margin-top: 30px;
-    display: block;
+    display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
@@ -74,7 +74,7 @@
 
 }
 
-.button{
+/*.button{
     width: 20vw;
     height: 10vh;
     background-color: rgb(247, 247, 247);
@@ -87,7 +87,7 @@
     outline: none;
     border: none;
     border: solid 2px rgba(82, 43, 255, 0.2);
-}
+}*/
 /* 
 
     You can write your own styles here...
