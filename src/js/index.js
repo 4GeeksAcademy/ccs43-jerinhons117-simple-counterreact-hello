@@ -17,14 +17,6 @@ function SimpleCounter(props){
     </div>);
 };
 
-SimpleCounter.PropTypes = {
-    digitFour : PropTypes.number,
-    digitThree : PropTypes.number,
-    digitTwo : PropTypes.number,
-    digitOne : PropTypes.number 
-
-};
-
 
 let counter = 0;
 setInterval (function(){
